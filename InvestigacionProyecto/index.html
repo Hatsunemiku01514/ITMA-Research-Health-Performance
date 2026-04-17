@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación Académica ITMA</title>
+    <style>
+        :root {
+            --primary: #00d1ff; /* Azul cian moderno */
+            --bg: #ffffff;
+            --text-main: #1d1d1f;
+            --text-dim: #86868b;
+            --border: #d2d2d7;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .poster {
+            width: 210mm;
+            height: 297mm;
+            background: var(--bg);
+            padding: 60px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        /* Encabezado formal */
+        .header {
+            border-bottom: 2px solid var(--text-main);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .institution {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-dim);
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.1;
+            color: var(--text-main);
+        }
+
+        /* Cuerpo del cartel */
+        .content {
+            flex-grow: 1;
+        }
+
+        .abstract {
+            font-size: 20px;
+            line-height: 1.5;
+            color: var(--text-main);
+            margin-bottom: 40px;
+            max-width: 90%;
+        }
+
+        .highlight-box {
+            background: #fbfbfd;
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            margin: 30px 0;
+            font-size: 18px;
+            color: #424245;
+        }
+
+        /* Sección de interacción */
+        .cta-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fafafa;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: auto;
+        }
+
+        .qr-container {
+            background: white;
+            padding: 15px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .qr-container img {
+            width: 220px;
+            height: 220px;
+            display: block;
+        }
+
+        .links-container {
+            flex: 1;
+            margin-left: 40px;
+        }
+
+        .instruction {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .direct-link {
+            display: inline-block;
+            background: var(--text-main);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: opacity 0.2s;
+        }
+
+        .url-text {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: var(--text-dim);
+            word-break: break-all;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--text-dim);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media print {
+            body { background: white; }
+            .poster { border: none; box-shadow: none; width: 100%; height: 100%; }
+            .direct-link { border: 1px solid #000; color: #000; background: transparent; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="poster">
+        <div class="header">
+            <div class="institution">Instituto Tecnológico de Milpa Alta</div>
+            <h1>Protocolo de Investigación: <br>Salud y Rendimiento Académico</h1>
+        </div>
+
+        <div class="content">
+            <p class="abstract">
+                Se convoca a la comunidad estudiantil del <strong>turno matutino (1er a 5to semestre)</strong> a participar en el presente levantamiento de datos cuantitativos.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Objetivo:</strong> Identificar el impacto de los hábitos de sueño, alimentación y factores psicosociales en el desempeño académico para la formulación de propuestas de mejora institucional.
+            </div>
+
+            <p style="font-size: 17px; color: var(--text-dim);">
+                La participación es voluntaria y los datos recopilados son tratados bajo estrictos estándares de confidencialidad académica. Tiempo estimado de respuesta: 3 minutos.
+            </p>
+        </div>
+
+        <div class="cta-section">
+            <div class="qr-container">
+                <img src="QR encuesta.jpeg" alt="Código QR">
+            </div>
+            
+            <div class="links-container">
+                <div class="instruction">Escanea el código QR o utiliza el enlace directo:</div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScCxfz56l5rwfWM8jEWhmOsNjmrboHjkVyHgvg2B9thPwRy4A/viewform" class="direct-link">Acceder al Formulario</a>
+                <span class="url-text">https://bit.ly/Investigacion-ITMA-2026</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span>Departamento de Ingeniería en Sistemas Computacionales</span>
+            <span>Abril 2026</span>
+        </div>
+    </div>
+
+</body>
+</html>
